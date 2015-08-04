@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+    </dependencies>
+    <scenes>
+        <!--Goujon View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="goujonViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="H" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eY2-7n-OxI">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="JkB-01-BIb"/>
+                                    <constraint firstAttribute="height" constant="197" id="t87-cD-4Po"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="128"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="K" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tw-US-BD0">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="hq6-HQ-gJ3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="128"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htz-Cr-b9A">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="9R6-sP-IyU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="eY2-7n-OxI" firstAttribute="top" secondItem="htz-Cr-b9A" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="9fN-yO-Ajc"/>
+                            <constraint firstItem="2tw-US-BD0" firstAttribute="baseline" secondItem="eY2-7n-OxI" secondAttribute="baseline" type="default" id="Vl3-7C-tLb"/>
+                            <constraint firstItem="2tw-US-BD0" firstAttribute="leading" secondItem="eY2-7n-OxI" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="aZx-3P-VCm"/>
+                            <constraint firstItem="eY2-7n-OxI" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="hOB-o0-BLl"/>
+                            <constraint firstItem="htz-Cr-b9A" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="oj6-c8-aQd"/>
+                            <constraint firstItem="2tw-US-BD0" firstAttribute="top" secondItem="htz-Cr-b9A" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="onF-2x-NNk"/>
+                            <constraint firstItem="htz-Cr-b9A" firstAttribute="top" secondItem="3" secondAttribute="top" constant="110" id="wya-oN-dQh"/>
+                            <constraint firstItem="htz-Cr-b9A" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="yTh-rK-vZR"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="cU4-uG-Sot" appends="YES" id="ics-yu-fzM"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="hiralabel" destination="eY2-7n-OxI" id="cTi-4A-ec2"/>
+                        <outlet property="katalabel" destination="2tw-US-BD0" id="CWp-9O-qPk"/>
+                        <outlet property="romajilabel" destination="htz-Cr-b9A" id="BFy-Tx-Hr8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="cU4-uG-Sot">
+                    <connections>
+                        <action selector="randbtn:" destination="2" id="DQc-yS-Cgu"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-133" y="-31"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="goujonViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/goujonViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="randbtn:"/>
+                <relationship kind="outlet" name="hiralabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="katalabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="romajilabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
