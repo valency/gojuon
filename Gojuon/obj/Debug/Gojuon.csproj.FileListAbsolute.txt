@@ -1,0 +1,9 @@
+c:\users\ye\documents\visual studio 2012\Projects\Gojuon\Gojuon\bin\Debug\Gojuon.exe.config
+c:\users\ye\documents\visual studio 2012\Projects\Gojuon\Gojuon\bin\Debug\Gojuon.exe
+c:\users\ye\documents\visual studio 2012\Projects\Gojuon\Gojuon\bin\Debug\Gojuon.pdb
+c:\users\ye\documents\visual studio 2012\Projects\Gojuon\Gojuon\obj\Debug\Gojuon.csprojResolveAssemblyReference.cache
+c:\users\ye\documents\visual studio 2012\Projects\Gojuon\Gojuon\obj\Debug\Gojuon.Form1.resources
+c:\users\ye\documents\visual studio 2012\Projects\Gojuon\Gojuon\obj\Debug\Gojuon.Properties.Resources.resources
+c:\users\ye\documents\visual studio 2012\Projects\Gojuon\Gojuon\obj\Debug\Gojuon.csproj.GenerateResource.Cache
+c:\users\ye\documents\visual studio 2012\Projects\Gojuon\Gojuon\obj\Debug\Gojuon.exe
+c:\users\ye\documents\visual studio 2012\Projects\Gojuon\Gojuon\obj\Debug\Gojuon.pdb
