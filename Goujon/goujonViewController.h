@@ -9,13 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface goujonViewController : UIViewController {
-    UILabel *romajilabel;
-    UILabel *hiralabel;
-    UILabel *katalabel;
+    UILabel *romajilabel,*hiralabel,*katalabel;
 }
-@property (nonatomic,retain) IBOutlet UILabel *romajilabel;
-@property (nonatomic,retain) IBOutlet UILabel *hiralabel;
-@property (nonatomic,retain) IBOutlet UILabel *katalabel;
+
+@property (nonatomic,retain) IBOutlet UILabel *romajilabel,*hiralabel,*katalabel;
+@property (retain) NSArray *romaji,*hiragana,*katakana;
 
 - (IBAction)randbtn:(id)sender;
 
